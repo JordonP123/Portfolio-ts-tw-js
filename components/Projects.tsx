@@ -52,7 +52,7 @@ export default function Projects({ }: Props) {
                                 <p>1. {d1[i]}</p>
                                 <p>2. {d2[i]}</p>
                                 <p>3. {d3[i]}</p>
-                                <p>{d5[i] !== null ? `4. ${d5[i]}` : null}</p>
+                                <p>{d5[i] !== null ? `4. ${d5[i]}` : ''}</p>
                             </div>
                     </div>
                     </div>
