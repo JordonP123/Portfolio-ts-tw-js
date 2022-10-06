@@ -17,7 +17,7 @@ export default function Projects({ }: Props) {
     const d4 = ['DEPLOYING SOON', 'TRY ME', 'VIEW ME', 'VIEW ME']
     const d5 = [null, null, 'Constructed a model to access the database using Knex.js, involving seeds and migrations', null]
     const names = ['Nasa Photo Of The Day', 'React Widget']
-    const links = [null, 'https://advanced-react-grid.herokuapp.com/', 'https://github.com/JordonP123/Node-Auth', 'https://github.com/JordonP123/Node-Recipes' ]
+    const links = ['#projects', 'https://advanced-react-grid.herokuapp.com/', 'https://github.com/JordonP123/Node-Auth', 'https://github.com/JordonP123/Node-Recipes' ]
     return (
         <div className='h-screen relative flex overflow-hidden text-left md:flex-row max-w-full
     justify-evenly mx-auto items-center z-0'>
