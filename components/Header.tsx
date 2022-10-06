@@ -34,6 +34,24 @@ export default function Header({ }: Props) {
                     bgColor='transparent'
                     />
             </motion.div>
+            <Link href='#hero'>
+            <motion.div
+              initial={{
+                y: -100,
+                opacity: 0,
+                scale: 0.5
+            }}
+            animate={{
+                y: 0,
+                opacity: 1,
+                scale: 1
+            }}
+            transition={{
+                duration: 1.5,
+            }}>
+             <i className="fa-brands fa-node-js scale-150 hover:text-[#c52222] hover:opacity-100 hover:cursor-pointer opacity-50"></i> 
+            </motion.div>
+            </Link>
             <Link href='#contact'>
             <motion.div
                 initial={{
@@ -56,7 +74,7 @@ export default function Header({ }: Props) {
                     fgColor='gray'
                     bgColor='transparent'
                 />
-                <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
+                <p className='uppercase hidden md:inline-flex text-sm text-gray-400 hover:text-[#c52222]'>
                     Get In Touch
                 </p>
             </motion.div>

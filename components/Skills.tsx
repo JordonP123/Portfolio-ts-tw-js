@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Skill from './Skill'
-import me from '../photos/me.jpg'
 import ts from '../photos/TS.png'
 import knex from '../photos/knex.png'
 import css from '../photos/CSS.webp'
@@ -21,10 +20,10 @@ export default function Skills({ }: Props) {
     let skill = [react, js, node, css, html, sql, git, knex, ts, tw]
     return (
         <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        className='h-screen flex relative flex-col text-center md:text-leftxl:flex-row max-w-[2000px] xl:px-10 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
+            className='h-screen flex relative flex-col text-center md:text-leftxl:flex-row max-w-[2000px] xl:px-10 
         min-h-screen justify-center xl:space-y-0 mx-auto items-center'>
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
                 Skills
@@ -34,9 +33,9 @@ export default function Skills({ }: Props) {
                 Hover over a skill for current proficiency
             </h3>
 
-            <div className='grid grid-cols-4 gap-5'>
+            <div className='grid grid-cols-4 gap-2 md:grid-cols-4 md:gap-5'>
                 {skillPerc.map((e, i) => (
-                    <Skill key = {i} skillPerc={e} imageSrc={skill[i]} />
+                    <Skill key={i} skillPerc={e} imageSrc={skill[i]}/>
                 ))}
             </div>
         </motion.div>
