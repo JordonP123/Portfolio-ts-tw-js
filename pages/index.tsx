@@ -15,7 +15,7 @@ const Home: NextPage = () => {
     snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth scrollbar
     scrollbar-track-gray-400/20 scrollbar-thumb-[#c52222]/80">
       <Head>
-        <title>Jordons Portfolio</title>
+        <title>Jordons Portfolio</title> 
         <script src="https://kit.fontawesome.com/2e3bd962e7.js" crossorigin="anonymous"></script>{/*eslint-disable-line*/}
       </Head>
 
