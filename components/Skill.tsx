@@ -1,10 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 type Props = {
     skillPerc: string;
-    imageSrc: string;
+    imageSrc: StaticImageData;
 }
 
 export default function Skill({ skillPerc, imageSrc }: Props) {
