@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 type Props = {
     skillPerc: string;
-    imageSrc: JSX.Element;
+    imageSrc: string;
 }
 
 export default function Skill({ skillPerc, imageSrc }: Props) {
