@@ -29,20 +29,10 @@ export default function Header({ }: Props) {
                     bgColor='transparent'
                 />
                 <SocialIcon
-                    url='https://www.linkedin.com/in/jordon-pruitt/'
+                    url='https://github.com/JordonP123'
                     fgColor='gray'
                     bgColor='transparent'
-                />
-                <SocialIcon
-                    url='https://www.linkedin.com/in/jordon-pruitt/'
-                    fgColor='gray'
-                    bgColor='transparent'
-                />
-                <SocialIcon
-                    url='https://www.linkedin.com/in/jordon-pruitt/'
-                    fgColor='gray'
-                    bgColor='transparent'
-                />
+                    />
             </motion.div>
             <Link href='#contact'>
             <motion.div

@@ -1,10 +1,24 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Skill from './Skill'
+import me from '../photos/me.jpg'
+import ts from '../photos/TS.png'
+import knex from '../photos/knex.png'
+import css from '../photos/CSS.webp'
+import react from '../photos/React.png'
+import node from '../photos/node2.png'
+import git from '../photos/git.png'
+import html from '../photos/HTML.png'
+import js from '../photos/js.png'
+import tw from '../photos/tailwind.jpg'
+import sql from '../photos/SQL.png'
 
-type Props = {}
+type Props = {
+}
 
 export default function Skills({ }: Props) {
+    const skillPerc = ['70%', '70%', '60%', '80%', '85%', '55%', '75%', '40%', '45%', '50%']
+    let skill = [react, js, node, css, html, sql, git, knex, ts, tw]
     return (
         <motion.div
         initial={{ opacity: 0 }}
@@ -21,19 +35,9 @@ export default function Skills({ }: Props) {
             </h3>
 
             <div className='grid grid-cols-4 gap-5'>
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
-                <Skill />
+                {skillPerc.map((e, i) => (
+                    <Skill key = {i} skillPerc={e} imageSrc={skill[i]} />
+                ))}
             </div>
         </motion.div>
     )

@@ -1,9 +1,8 @@
 import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles'
-import photoOfMe from '../photos/me.jpg'
+import photoOfMe from '../photos/photoO.jpg'
 import Image from 'next/image'
-import { relative } from 'path'
 import Link from 'next/link'
 
 type Props = {}
@@ -22,8 +21,8 @@ export default function Hero({ }: Props) {
          '>
             <BackgroundCircles />
             <Image
-                height={180}
-                width={180}
+                height={190}
+                width={190}
                 className="rounded-full relative mx-auto object-cover"
                 src={photoOfMe}
                 alt='photo of user'

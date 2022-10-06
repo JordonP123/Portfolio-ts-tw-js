@@ -1,30 +1,34 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 type Props = {
-    directionLeft?: boolean
+    skillPerc: string;
+    imageSrc: string;
 }
 
-export default function Skill({ directionLeft }: Props) {
+export default function Skill({ skillPerc, imageSrc }: Props) {
   return (
     <div className='group relative flex cursor-pointer'>
-    <motion.img
+    <motion.div
     initial={{
-        x: directionLeft ? -200 : 200,
+        x: 200,
         opacity: 0
     }}
     transition={{ duration: 1 }}
     whileInView={{ opacity: 1, x: 0 }}
-    src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
+    className='w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 '
+    >
+    <Image width={''} height={''} src={imageSrc}
     className='p-1 rounded-full border border-gray-500 object-cover 
-    w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
-        />
+    filter group-hover:grayscale transition duration-300 ease-in-out' alt='skills'/>
+        </motion.div>
         <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300
-        ease-in-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w-32 xl:h-32
+        ease-in-out group-hover:bg-white w-24 h-24 md:h-28 md:w-28 xl:w-32 xl:h-32
         rounded-full z-0'>
             <div className='flex items-center justify-center h-full'>
                 <p className='text-2xl font-bold text-black opacity-100'>
-                    100%
+                    {skillPerc}
                 </p>
             </div>
         </div>

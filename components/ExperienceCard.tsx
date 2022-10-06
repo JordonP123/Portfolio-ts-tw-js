@@ -17,7 +17,8 @@ export default function ExperienceCard({ }: Props) {
                 transition={{ duration: 1.2 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className='w-32 h-32 rouned-full xl:w-[200px] xl:h-[200px]
+                src='https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/408/original/Bloom_Institute_of_Technology_logo.png'
+                className='w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px]
        object-cover object-center' alt=''
             />
 
@@ -41,7 +42,6 @@ export default function ExperienceCard({ }: Props) {
                     <li>csdcsdc</li>
                     <li>csdcsc</li>
                     <li>cdscsdc</li>
-                    <li>csdcsc</li>
                 </ul>
             </div>
         </article>
