@@ -21,7 +21,7 @@ export default function About({ }: Props) {
             initial={{ x: -200 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 1.2 }}
-            className='w-[400px] h-[400px] border-2 z-0 absolute left-6 bottom-62 rounded-md border-[#c52222] animate-pulse'></motion.div>
+            className='w-[400px] h-[400px] border-2 z-0 absolute left-6 bottom-62 rounded-md border-[#c52222] animate-pulse hidden xl:block'></motion.div>
                 <div className='w-[100px] h-[1px] mt-10 md:w-[3000px] md:h-[400px] xl:w-[3600px] xl:h-[500px]'>
                <Image height={2200} width={2200} src={photoOfMe} alt='photo of me'
                 className="-mb-5 md:mb-0 flex-shrink-0 rounded-full md:rounded-2xl" />
