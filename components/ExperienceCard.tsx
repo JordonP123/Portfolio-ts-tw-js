@@ -16,7 +16,7 @@ type Props = {}
 export default function ExperienceCard({ }: Props) {
     return (
         <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0
-        w-[500px] md:w-[600px] xl:w-[900px] xl:h-[650px] 
+        w-[300px] md:w-[600px] xl:w-[900px] xl:h-[650px] 
         snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40
         cursor-pointer transition-opacity duration-200 overflow-hidden'>
             <motion.img
@@ -51,7 +51,7 @@ export default function ExperienceCard({ }: Props) {
                 <ul className='list-disc space-y-4 ml-5 text-lg'>
                     <li>Finishing up at a well known, 6 month intensive full-stack bootcamp, which specializes in the technologies listed above</li>
                     <li>Participated in weekly sprints thriving to achieve results at the end of the week</li>
-                    <li>Here is a list of <a className='uppercase font-semibold hover:text-[#c52222]' href='#projects'>Projects</a> I developed/contributed to</li>
+                    <li>Here is a list of <a className='uppercase font-semibold hover:text-[#c52222]' href='#projects'>Projects</a></li>
                 </ul>
             </div>
         </article>
